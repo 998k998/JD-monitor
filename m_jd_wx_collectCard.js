@@ -237,5 +237,5 @@ $.after = async function () {
         $.msg.push($.activityUrl);
     }
 }
-$.run({whitelist: ['1-5'], wait: [1000, 3000]}).catch(
+$.run({whitelist: [process.env.M_Number_of_runs], wait: [3000, 5000]}).catch(
     reason => $.log(reason));
